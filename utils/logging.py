@@ -1,9 +1,10 @@
 
 import logging
 import os
+from enum import Enum
 
 @dataclass 
-class WBLogLevel:
+class WBLogLevel(Enum):
     DEBUG = logging.DEBUG
     INFO = logging.INFO
     WARNING = logging.WARNING
