@@ -1,0 +1,15 @@
+{
+    "segments":
+    [
+        {
+            "index":0,
+            "spec":
+            {   
+                "variant":2,
+                "type":"LEFT",
+                "arc_length":10
+            }
+        }
+    ]
+     
+}
