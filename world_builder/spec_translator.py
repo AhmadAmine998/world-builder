@@ -1,9 +1,9 @@
 
-from utils.logging import create_logger, WBLogLevel
-from utils.clothoid_utils import clothoid_to_waypoints_array
+from world_builder.utils.logging import create_logger, WBLogLevel
+from world_builder.utils.clothoid_utils import clothoid_to_waypoints_array
 
-from dataTypes.ClothoidRoadState import ClothoidRoadState
-from dataTypes.RoadTypes import RoadTypes
+from world_builder.dataTypes.ClothoidRoadState import ClothoidRoadState
+from world_builder.dataTypes.RoadTypes import RoadTypes
 
 from pyclothoids import Clothoid, SolveG2
 import numpy as np

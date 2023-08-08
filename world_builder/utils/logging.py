@@ -35,11 +35,11 @@ class _WBFormatter(logging.Formatter):
 def create_logger(log_level: WBLogLevel = WBLogLevel.DEBUG) -> logging.Logger:
     # create logger with filename as name
     logger = logging.getLogger(os.path.basename(__file__))
-    logger.setLevel(log_level)
+    logger.setLevel(log_level.value)
 
     # create console handler with specified log level
     ch = logging.StreamHandler()
-    ch.setLevel(log_level)
+    ch.setLevel(log_level.value)
 
     # set formatter of the console stream handler
     ch.setFormatter(_WBFormatter())
