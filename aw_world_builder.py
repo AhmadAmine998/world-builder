@@ -4,7 +4,7 @@ import sys
 import matplotlib.pyplot as plt
 
 from world_builder.dataTypes import ClothoidRoadState
-from world_builder.spec_translator import json_world_to_waypoints
+from world_builder.spec_translator import json_spec_to_waypoints
 from world_builder.utils.logging import create_logger
 
 _logger = create_logger()
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     raise NotImplementedError()
   elif(args.spec_file):
     initial_state = ClothoidRoadState(float(args.x0), float(args.y0), 0)
-    waypoints_arr = json_world_to_waypoints(args.spec_file, initial_state, args.close)
+    waypoints_arr = json_spec_to_waypoints(args.spec_file, initial_state, args.close)
     if args.plot:
       plt.plot(waypoints_arr[:, 0], waypoints_arr[:, 1])
       plt.title(f'Generated trajectory form spec file {os.path.basename(args.spec_file)}')
