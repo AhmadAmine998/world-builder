@@ -3,7 +3,6 @@ import logging
 import os
 from enum import Enum
 
-@dataclass 
 class WBLogLevel(Enum):
     DEBUG = logging.DEBUG
     INFO = logging.INFO
