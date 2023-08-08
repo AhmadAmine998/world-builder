@@ -10,7 +10,7 @@ class WBLogLevel:
     ERROR = logging.ERROR
     CRITICAL = logging.CRITICAL
 
-class WBFormatter(logging.Formatter):
+class _WBFormatter(logging.Formatter):
   "[{severity} {time}] [{name}]: {message} ({function_name}() at {file_name}:{line_number})"
   grey = "\x1b[38;20m"
   yellow = "\x1b[33;20m"
@@ -42,7 +42,7 @@ def create_logger(log_level: WBLogLevel = WBLogLevel.DEBUG) -> logging.Logger:
     ch.setLevel(log_level)
 
     # set formatter of the console stream handler
-    ch.setFormatter(WBFormatter())
+    ch.setFormatter(_WBFormatter())
 
     # add the handlers to the logger
     logger.addHandler(ch)
