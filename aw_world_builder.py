@@ -3,7 +3,7 @@ import os, argparse
 import sys
 import matplotlib.pyplot as plt
 
-from world_builder.dataTypes import ClothoidRoadState
+from world_builder.dataTypes.ClothoidRoadState import ClothoidRoadState
 from world_builder.spec_translator import json_spec_to_waypoints
 from world_builder.utils.logging import create_logger
 
