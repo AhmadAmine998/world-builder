@@ -6,7 +6,7 @@
             "spec":
             {   
                 "variant":1,
-                "type":"LEFT",
+                "type":"RIGHT",
                 "arc_length":2
             }
         },
@@ -15,7 +15,7 @@
             "spec":
             {   
                 "variant":1,
-                "type":"RIGHT",
+                "type":"LEFT",
                 "arc_length":2
             }
         },
@@ -42,12 +42,39 @@
             "spec":
             {   
                 "variant":1,
-                "type":"LEFT",
+                "type":"RIGHT",
                 "arc_length":2
             }
         },
         {
             "index":5,
+            "spec":
+            {   
+                "variant":1,
+                "type":"LEFT",
+                "arc_length":2
+            }
+        },
+        {
+            "index":6,
+            "spec":
+            {   
+                "variant":1,
+                "type":"LEFT",
+                "arc_length":2
+            }
+        },
+        {
+            "index":7,
+            "spec":
+            {   
+                "variant":1,
+                "type":"RIGHT",
+                "arc_length":2
+            }
+        },
+        {
+            "index":8,
             "spec":
             {   
                 "variant":1,
